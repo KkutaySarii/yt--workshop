@@ -43,7 +43,7 @@ const DrawPage = () => {
     <div className="container mx-auto flex flex-col gap-y-8 items-start w-full mt-12">
       <h1 className="text-center w-full text-2xl font-bold">YTÜ ÇEKİLİŞ</h1>
       <div className="flex items-center justify-center w-full">
-        <img src="/src/assets/ytübc.png" alt="logo" width={200} height={200} />
+        <img src="/ytübc.png" alt="logo" width={200} height={200} />
       </div>
       <div className="flex items-center justify-center w-full">
         <Web3Button

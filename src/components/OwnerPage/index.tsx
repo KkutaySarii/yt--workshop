@@ -5,7 +5,6 @@ import {
   useContractRead,
 } from "@thirdweb-dev/react";
 import { CONTRACT_ADDRESS } from "../../lib/constants";
-import { ethers } from "ethers";
 import Loading from "../Loading";
 import Error from "../Error";
 
@@ -33,7 +32,6 @@ const OwnerPage = () => {
         action={async (contract) => {
           await contract.call("pickWinner", [], {
             gasLimit: 1000000, // override default gas limit
-            value: ethers.utils.parseEther("0.01"),
           });
         }}
       >
