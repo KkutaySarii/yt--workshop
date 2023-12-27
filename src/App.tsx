@@ -26,7 +26,7 @@ function App() {
   return (
     <main className="flex items-start flex-col w-full h-screen text-white">
       <Sidebar />
-      {address === owner ? <OwnerPage /> : <DrawPage />}
+      {address !== owner ? <OwnerPage /> : <DrawPage />}
     </main>
   );
 }
